@@ -8,9 +8,6 @@ const people = [
 // Risultato: 'Paolo', 'Giulia', 'Marco'
 
 //forEach with extended arrow function
-/* people.forEach((person) => {
+people.forEach((person) => {
   console.log(person.name);
-}); */
-
-//forEach with shortest arrow function
-people.forEach(person => console.log(person.name));
+});

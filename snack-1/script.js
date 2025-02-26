@@ -4,9 +4,6 @@ const names = ['Edoardo', 'Simone', 'Francesco'];
 // Risultato: 'Edoardo', 'Simone', 'Francesco'
 
 //forEach with extended arrow function
-/* names.forEach((name) => {
+names.forEach((name) => {
   console.log(name);
-}); */
-
-//forEach with shorter arrow function
-names.forEach(name => console.log(name));
+});
