@@ -21,3 +21,12 @@ const students = [
 
 // Recupera la classe dello studente 'Marco Lanci'
 // Risultato: '3C'
+
+//find with extended arrow function
+const studentClass = students.find((student) => {
+  if (student.name === 'Marco Lanci') {
+    return true;
+  }
+  return false;
+}).class;
+console.log(studentClass);
