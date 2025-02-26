@@ -6,3 +6,11 @@ const people = [
 
 // Stampa in console tutti i nomi
 // Risultato: 'Paolo', 'Giulia', 'Marco'
+
+//forEach with extended arrow function
+/* people.forEach((person) => {
+  console.log(person.name);
+}); */
+
+//forEach with shortest arrow function
+people.forEach(person => console.log(person.name));
