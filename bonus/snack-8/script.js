@@ -23,7 +23,7 @@ const students = [
 // Risultato: '3C'
 
 //find with shortest arrow function version
-const studentClass = students.find(student => student.id === 2).class;
+const studentClass = students.find(student => student.name === "Marco Lanci").class;
 console.log(studentClass);
 
 //classic for loop
@@ -31,13 +31,13 @@ let student_class;
 for (let i = 0; i < students.length; i++) {
   const thisStudent = students[i];
 
-  if (thisStudent.id === 2) {
+  if (thisStudent.name === "Marco Lanci") {
     student_class = thisStudent.class
   }
 }
 console.log(student_class);
 
 //shortest version possible
-console.log((students.find(student => student.id === 2).class));
+console.log((students.find(student => student.name === "Marco Lanci").class));
 
 
