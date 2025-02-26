@@ -13,22 +13,30 @@ const zucchine = [
 
 // A partire dall'array fornito, crea due array. Uno con le zucchine più lunghe di almeno 15cm. L'altro con le restanti.
 
-//filter with extended arrow function for zucchine >= 15cm
-const longest = zucchine.filter((zucchina) => {
-  if (zucchina.length >= 15) {
-    return true;
-  }
-  return false;
-});
+//filter with shortest arrow function version for longest zucchine
+const longest = zucchine.filter(zucchina => zucchina.length >= 15);
+console.log(longest);
 
-//filter with extended arrow function for zucchine < 15cm
-const shortest = zucchine.filter((zucchina) => {
-  if (zucchina.length < 15) {
-    return true;
-  }
-  return false;
-});
+//filter with shortest arrow function version for longest zucchine
+const shortest = zucchine.filter(zucchina => zucchina.length < 15);
+console.log(shortest);
 
-//print results
+//classic unique for loop
+const longestt = [];
+const shortestt = [];
+for (let i = 0; i < zucchine.length; i++) {
+  const thisZucchina = zucchine[i];
+  if (thisZucchina.length >= 15) {
+    longestt.push(thisZucchina);
+  } else {
+    shortestt.push(thisZucchina);
+  }
+}
 console.log(longest);
 console.log(shortest);
+
+//shortest version possible
+const longesttt = [], shortesttt = [];
+zucchine.forEach(zucchina => zucchina.length >= 15 ? longesttt.push(zucchina) : shortesttt.push(zucchina));
+console.log(longesttt, shortesttt);
+
