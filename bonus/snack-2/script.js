@@ -7,7 +7,11 @@ const people = [
 // Stampa in console tutti i nomi
 // Risultato: 'Paolo', 'Giulia', 'Marco'
 
-//forEach with extended arrow function
-people.forEach((person) => {
-  console.log(person.name);
-});
+//forEach with shortest arrow function version
+people.forEach(person => console.log(person.name));
+
+//classic for loop
+for (let i = 0; i < people.length; i++) {
+  const thisPerson = people[i];
+  console.log(thisPerson.name);
+}
