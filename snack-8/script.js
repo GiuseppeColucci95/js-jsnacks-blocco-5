@@ -28,5 +28,5 @@ const studentClass = students.find((student) => {
     return true;
   }
   return false;
-}).class;
+})?.class;
 console.log(studentClass);
