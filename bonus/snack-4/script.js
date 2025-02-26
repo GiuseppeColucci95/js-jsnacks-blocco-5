@@ -8,8 +8,20 @@ const posts = [
 // Crea un nuovo array coi nomi di tutti gli autori
 // Risultato: ['Marco', 'Luca', 'Fabrizio', 'Enrico']
 
-//map with extended arrow function
-const authors = posts.map((post) => {
-  return post.author;
-});
+//map with shortes arrow function version
+const authors = posts.map(post => post.author);
 console.log(authors);
+
+//classic for loop
+const authorss = [];
+for (let i = 0; i < posts.length; i++) {
+  const thisPost = posts[i];
+  authorss.push(thisPost.author);
+}
+console.log(authorss);
+
+//shortest version possible
+console.log(posts.map(post => post.author));
+
+
+
